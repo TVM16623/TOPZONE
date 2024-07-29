@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class District extends Model
+{
+    use HasFactory;
+    protected $hidden = ['created_at', 'updated_at'];
+    protected $table = 'districts';
+    protected $fillable = ['name', 'city_id'];
+
+    public function subDistricts()
+    {
+        return $this->hasMany(SubDistrict::class);
+    }
+
+    public function city()
+    {
+        return $this->belongsTo(City::class);
+    }
+}

@@ -1,0 +1,32 @@
+.body {
+    background-color: #f0f0f0;
+    .contentCart {
+        background-color: #fff;
+        // border-radius: 12px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .totalPrice {
+        padding: 0 30px 17px;
+    }
+
+    .contentPrice{
+        float:right;
+    }
+
+    .inputQuantity{
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+}
+
+.borderBottom {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
